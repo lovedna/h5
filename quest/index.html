@@ -11,8 +11,9 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	
 	
+	<script type="text/javascript" src="./lib/pako.min.js"></script>
 	<script type="text/javascript" src="./lib/soundjs.min.js"></script>
-	<script type="text/javascript" src="./tiledQuest.js"></script>
+	
 	
 	<script>
 		window.addEventListener ("touchmove", function (event) { event.preventDefault (); }, false);
@@ -25,16 +26,28 @@
 	<style>
 		html,body { margin: 0; padding: 0; height: 100%; overflow: hidden; }
 		#openfl-content { background: #000000; width: 100%; height: 100%; }
+		#loading { background: #abcdef; width: 100%; height: 100%; }
 		
 	</style>
 	
 </head>
 <body>
-	
-	<div id="openfl-content"></div>
-	
+	<div id="loading">正在加载,请稍等...</div>
 	<script type="text/javascript">
-		lime.embed ("openfl-content", 0, 0, "ABCDEF");
+		var version=0;
+		document.write("<script type='text/javascript' src='version.js?"+new Date().getTime()+"' ><\/script>");
+	</script>
+	<script type="text/javascript">
+		var app="<script type='text/javascript' src='./tiledQuest2.js?version="+version+"'><\/script>";
+		document.write(app);
+	</script>
+	<script type="text/javascript">
+		var content="<div id='openfl-content'><\/div>";
+		document.write(content);
+		document.getElementById("loading").style.display="none";
+	</script>	
+	<script type="text/javascript">
+		lime.embed ("openfl-content", 0, 0, "000000");
 	</script>
 	
 </body>

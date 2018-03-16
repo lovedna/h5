@@ -15,6 +15,9 @@ Object.assign(Ext.prototype,{
 	},
 	plusReady: function () {
 		extvar.ready=true;
+		plus.device.setWakelock( true );
+		alert(plus.device.uuid);
+		Knife.SetUid(plus.device.uuid);
 	},
 	vibrate: function (time) {
 		if(extvar.ready==false)
@@ -23,30 +26,26 @@ Object.assign(Ext.prototype,{
 		}
 		plus.device.vibrate( time );
 	},
+	setToClip:function(value){
+		if(extvar.ready==false)
+		{
+			return;
+		}
+		var Context = plus.android.importClass("android.content.Context");
+		var main = plus.android.runtimeMainActivity();
+		var clip = main.getSystemService(Context.CLIPBOARD_SERVICE);
+		plus.android.invoke(clip,"setText",value);
+	},
+	readFromClip:function(value){
+		if(extvar.ready==false)
+		{
+			return "";
+		}
+		var Context = plus.android.importClass("android.content.Context");
+        var main = plus.android.runtimeMainActivity();
+        var clip = main.getSystemService(Context.CLIPBOARD_SERVICE);
+        return plus.android.invoke(clip,"getText");
+	},
 }
 
 );
-
-// var Ext =function()
-// {
-	// this.ready=false,
-	// this.start=function()
-	// {
-		// alert("ext.start");
-		// if(window.plus){
-			// plusReady();
-		// }else{
-			// document.addEventListener("plusready",this.plusReady,false);
-		// }
-	// },
-	// this.plusReady=function()
-	// {
-		// ready=true;
-		// alert("ext.ready");
-	// },
-	// this.vibrate=function(time)
-	// {
-		// if(!ready)return;
-		// plus.device.vibrate( time );
-	// }
-// }

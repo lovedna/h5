@@ -16,7 +16,7 @@ Object.assign(Ext.prototype,{
 	plusReady: function () {
 		extvar.ready=true;
 		plus.device.setWakelock( true );
-		alert(plus.device.uuid);
+		//alert(plus.device.uuid);
 		Knife.SetUid(plus.device.uuid);
 	},
 	vibrate: function (time) {

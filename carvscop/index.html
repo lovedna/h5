@@ -4,20 +4,13 @@
 	
 	<meta charset="utf-8">
 	
-	<title>CarVsCop</title>
+	<title>knifeHit</title>
 	
 	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<meta name="apple-mobile-web-app-capable" content="yes">
-	
-	
-	<link rel="shortcut icon" type="image/png" href="./favicon.png">
-	
-	
 	<script type="text/javascript" src="./lib/howler.min.js"></script>
 	<script type="text/javascript" src="./lib/pako.min.js"></script>
 	<script type="text/javascript" src="./lib/FileSaver.min.js"></script>
-	<script type="text/javascript" src="./CarVsCop.js"></script>
-	
 	<script>
 		//window.addEventListener ("touchmove", function (event) { event.preventDefault (); }, false);
 		if (typeof window.devicePixelRatio != 'undefined' && window.devicePixelRatio > 2) {
@@ -35,11 +28,23 @@
 </head>
 <body>
 	
-	
-	<div id="content"></div>
-	
+	<div id="loading">正在加载,请稍等...</div>
+	<script type="text/javascript">
+		var version=0;
+		document.write("<script type='text/javascript' src='version.js?"+new Date().getTime()+"' ><\/script>");
+	</script>
+	<script type="text/javascript">
+		var app="<script type='text/javascript' src='./CarVsCop.js?version="+version+"'><\/script>";
+		document.write(app);
+	</script>
+	<script type="text/javascript">
+		var content="<div id='content'><\/div>";
+		document.write(content);
+		document.getElementById("loading").style.display="none";
+	</script>	
 	<script type="text/javascript">
 		lime.embed ("CarVsCop", "content", 0, 0);
+		
 	</script>
 	
 </body>

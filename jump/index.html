@@ -4,19 +4,14 @@
 	
 	<meta charset="utf-8">
 	
-	<title>jump</title>
-	<style>    
-	.div-relative{position:relative; color:#000; border:1px solid #000; width:500px; height:400px}    
-	.div-a{ position:absolute; left:30px; top:30px; background:#F00; width:200px; height:100px}    
-	.div-b{ position:absolute; left:50px; top:60px; background:#FF0; width:400px; height:200px}    
-	.div-c{ position:absolute; left:0px; top:0px;  width:100%; height:100%;border:1px solid #000;}    
-	</style>    
+	<title>v6</title>
+	
 	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<script type="text/javascript" src="./lib/howler.min.js"></script>
 	<script type="text/javascript" src="./lib/pako.min.js"></script>
 	<script>
-		//window.addEventListener ("touchmove", function (event) { event.preventDefault (); }, false);
+		window.addEventListener('touchmove', function (event) { event.preventDefault (); }, {capture: false,passive: false});
 		if (typeof window.devicePixelRatio != 'undefined' && window.devicePixelRatio > 2) {
 			var meta = document.getElementById ("viewport");
 			meta.setAttribute ('content', 'width=device-width, initial-scale=' + (2 / window.devicePixelRatio) + ', user-scalable=no');
@@ -26,36 +21,46 @@
 	<style>
 		html,body { margin: 0; padding: 0; height: 100%; overflow: hidden; }
 		#content { background: #000000; width: 100%; height: 100%; }
-
+		.div-relative{position:relative; color:#000; border:1px solid #000; width:500px; height:400px} 
+		.div-a{ position:absolute; left:30px; top:30px; background:#F00; width:200px; height:100px} 
+		/* css注释说明： 背景为红色 */ 
+		.div-b{ position:absolute; left:50px; top:60px; background:#FF0; width:400px; height:200px} 
+		/* 背景为黄色 */ 
+		.div-c{ position:absolute; left:0px; top:0px; background:#00000000; width:100%; height:100%} 
+		/* DIV背景颜色为蓝色 */ 
 	</style>
 	
 </head>
-<body >
-	<canvas id="canvas"></canvas>
+<body>
+	
+	<div class="div-c"><canvas id="webgl"></canvas></div> 
+	<script type="text/javascript">
+		var version=0;
+		document.write("<script type='text/javascript' src='version.js?"+new Date().getTime()+"' ><\/script>");
+	</script>
+	<script type="text/javascript">
+		if(version==0)
+		{
+			version=new Date().getTime();
+		}
+		var app="<script type='text/javascript' src='game.min.js?version="+version+"'><\/script>";
+		document.write(app);
+	</script>	
 	<script type="text/javascript">
 		var trace=console.log;
-		var c = document.getElementById('canvas');
-		var version=0;
-		document.write("<script type='text/javascript' src='assets/version.js?"+new Date().getTime()+"' ><\/script>");
-	</script>
-	<script type="text/javascript">
-		var app="<script type='text/javascript' src='lib.min.js?version="+version+"'><\/script>";
-		document.write(app);
-	</script>
-	<script type="text/javascript">
-		lovedna.Assets.version=version;
-		function gameInit()
-		{
-			var stage=GameStage.current;
+		var c=document.getElementById("webgl");
+		var game=lovedna.game.Game.current;
+		game.system.setup({canvas:c});
+		function gameInit(){
 			var str=location.search;
 			if(str.indexOf("?")==0)
 			{
-				stage.load(str.substr(1));
+				lovedna.Battle.current.loadJson(str.substr(1)+".json?v=version");
+			}else
+			{
+				lovedna.Battle.current.loadJson("12x20.json");
 			}
-			//stage.load("map4.json");
 		}
-		var game=lovedna.game.Game.current;
-		game.system.setup({webgl:1,canvas:c,input:c});
 	</script>
 	
 </body>

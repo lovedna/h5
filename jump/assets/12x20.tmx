@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="2018.07.13" orientation="orthogonal" renderorder="left-down" width="12" height="20" tilewidth="50" tileheight="50" infinite="0" nextlayerid="3" nextobjectid="24">
+ <tileset firstgid="1" source="50.tsx"/>
+ <layer id="1" name="块层 1" width="12" height="20">
+  <data encoding="csv">
+1,1,1,1,1,0,0,0,0,0,0,1,
+1,1,1,1,1,0,0,0,0,0,0,1,
+1,1,1,1,1,1,0,0,1,1,1,1,
+1,1,1,1,1,1,0,0,1,1,1,1,
+1,1,1,0,0,0,0,0,1,1,1,1,
+1,1,1,0,0,0,0,0,1,1,1,1,
+1,0,0,0,0,0,0,1,1,0,0,1,
+1,0,0,0,0,0,0,1,1,0,0,1,
+1,0,0,1,1,1,1,0,0,0,0,1,
+1,0,0,1,1,1,1,0,0,0,0,1,
+1,0,0,1,1,0,0,0,0,0,0,1,
+1,0,0,1,1,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,1,
+1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,0,0,0,0,0,0,1,1,1,
+1,1,1,0,0,0,0,0,0,1,1,1,
+1,0,0,0,0,1,1,0,0,0,0,1,
+1,0,0,0,0,1,1,0,0,0,0,1,
+1,1,1,1,1,1,1,1,1,1,1,1
+</data>
+ </layer>
+ <objectgroup id="2" name="对象层 1">
+  <object id="1" name="door" type="door" x="223" y="681">
+   <point/>
+  </object>
+  <object id="3" type="cutter" x="324" y="839">
+   <point/>
+  </object>
+  <object id="4" type="cutter" x="219" y="237">
+   <point/>
+  </object>
+  <object id="5" type="cutter" x="123" y="585">
+   <point/>
+  </object>
+  <object id="6" type="cutter" x="126" y="538">
+   <point/>
+  </object>
+  <object id="7" type="cutter" x="374" y="129">
+   <point/>
+  </object>
+  <object id="9" type="cutter" x="168" y="885">
+   <point/>
+  </object>
+  <object id="14" type="shooter" x="328" y="85">
+   <point/>
+  </object>
+  <object id="15" type="shooter" x="71" y="389">
+   <properties>
+    <property name="x" type="int" value="1"/>
+    <property name="y" type="int" value="0"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="19" type="trigger" x="322" y="687">
+   <properties>
+    <property name="close" type="int" value="1"/>
+    <property name="x" type="int" value="2"/>
+    <property name="y" type="int" value="10"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="21" type="trigger" x="424" y="636">
+   <properties>
+    <property name="dir" type="int" value="1"/>
+    <property name="x" type="int" value="6"/>
+    <property name="y" type="int" value="13"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="22" type="gem" x="275" y="337">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

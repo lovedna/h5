@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="2018.07.13" orientation="orthogonal" renderorder="left-down" width="12" height="20" tilewidth="50" tileheight="50" infinite="0" nextlayerid="3" nextobjectid="17">
+ <tileset firstgid="1" source="50.tsx"/>
+ <layer id="1" name="块层 1" width="12" height="20">
+  <data encoding="csv">
+1,1,1,1,1,0,0,0,0,0,0,1,
+1,1,1,1,1,0,0,0,0,0,0,1,
+1,1,1,1,1,1,0,0,1,1,1,1,
+1,1,1,1,1,1,0,0,1,1,1,1,
+1,1,1,0,0,0,0,0,1,1,1,1,
+1,1,1,0,0,0,0,0,1,1,1,1,
+1,0,0,0,0,0,0,0,0,0,0,1,
+1,0,0,0,1,0,0,0,0,0,0,1,
+1,0,0,0,1,0,0,0,0,0,0,1,
+1,0,0,0,1,0,0,0,0,0,0,1,
+1,0,0,0,1,0,0,0,0,0,0,1,
+1,1,1,1,1,1,1,1,1,0,0,1,
+1,1,1,1,1,1,1,1,1,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,1,
+1,1,1,1,1,0,0,1,1,1,1,1,
+1,1,1,1,1,0,0,1,1,1,1,1,
+1,1,1,1,1,0,0,0,0,1,1,1,
+1,1,1,1,1,0,0,0,0,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1
+</data>
+ </layer>
+ <objectgroup id="2" name="对象层 1">
+  <object id="1" name="door" type="door" x="74" y="731">
+   <point/>
+  </object>
+  <object id="3" type="cutter" x="323" y="793">
+   <point/>
+  </object>
+  <object id="4" type="cutter" x="172" y="332">
+   <point/>
+  </object>
+  <object id="5" type="cutter" x="269" y="227">
+   <point/>
+  </object>
+  <object id="6" type="cutter" x="271" y="174">
+   <point/>
+  </object>
+  <object id="7" type="cutter" x="374" y="129">
+   <point/>
+  </object>
+  <object id="9" type="cutter" x="227" y="736">
+   <point/>
+  </object>
+  <object id="15" type="shooter" x="421" y="944">
+   <properties>
+    <property name="y" type="int" value="1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="16" type="gem" x="373" y="538">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

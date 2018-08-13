@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="2018.07.13" orientation="orthogonal" renderorder="left-down" width="12" height="20" tilewidth="50" tileheight="50" infinite="0" nextlayerid="3" nextobjectid="21">
+ <tileset firstgid="1" source="50.tsx"/>
+ <layer id="1" name="块层 1" width="12" height="20">
+  <data encoding="csv">
+1,1,1,1,1,1,1,1,1,1,1,1,
+1,0,0,0,0,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,1,
+1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,0,0,0,0,0,0,1,
+1,1,1,1,1,0,0,0,0,0,0,1,
+1,1,1,1,1,0,0,1,1,1,1,1,
+1,1,1,1,1,0,0,1,1,1,1,1,
+1,1,1,1,1,0,0,1,1,1,1,1,
+1,1,1,1,1,0,0,1,1,1,1,1,
+0,0,0,0,0,0,0,0,0,0,0,1,
+0,0,0,0,0,0,0,0,0,0,0,1,
+1,1,1,1,1,1,1,1,1,1,1,1
+</data>
+ </layer>
+ <objectgroup id="2" name="对象层 1">
+  <object id="1" name="door" type="door" x="381.333" y="629.667">
+   <point/>
+  </object>
+  <object id="3" type="cutter" x="226" y="891">
+   <point/>
+  </object>
+  <object id="4" type="cutter" x="172" y="332">
+   <point/>
+  </object>
+  <object id="5" type="cutter" x="269" y="227">
+   <point/>
+  </object>
+  <object id="6" type="cutter" x="271" y="174">
+   <point/>
+  </object>
+  <object id="7" type="cutter" x="374" y="129">
+   <point/>
+  </object>
+  <object id="9" type="cutter" x="175" y="942">
+   <point/>
+  </object>
+  <object id="14" type="shooter" x="272" y="388">
+   <point/>
+  </object>
+  <object id="15" type="shooter" x="230" y="385">
+   <properties>
+    <property name="y" type="int" value="1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="16" type="shooter" x="272" y="589">
+   <properties>
+    <property name="y" type="int" value="-1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="17" type="trigger" x="23" y="938">
+   <properties>
+    <property name="x" type="int" value="8"/>
+    <property name="y" type="int" value="18"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" type="trigger" x="419.333" y="939.667">
+   <point/>
+  </object>
+  <object id="19" type="trigger" x="431.333" y="876">
+   <point/>
+  </object>
+  <object id="20" type="gem" x="475.333" y="929.334">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

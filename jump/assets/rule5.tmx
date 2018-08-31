@@ -47,7 +47,7 @@
   <object id="9" type="cutter" x="227" y="736">
    <point/>
   </object>
-  <object id="15" type="shooter" x="276" y="941">
+  <object id="15" type="shooter" x="275" y="881">
    <properties>
     <property name="y" type="int" value="1"/>
    </properties>

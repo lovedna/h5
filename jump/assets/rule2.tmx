@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="2018.07.13" orientation="orthogonal" renderorder="left-down" width="12" height="20" tilewidth="50" tileheight="50" infinite="0" nextlayerid="3" nextobjectid="16">
+<map version="1.0" tiledversion="2018.07.13" orientation="orthogonal" renderorder="left-down" width="12" height="20" tilewidth="50" tileheight="50" infinite="0" nextlayerid="3" nextobjectid="17">
  <tileset firstgid="1" source="50.tsx"/>
  <layer id="1" name="块层 1" width="12" height="20">
   <data encoding="csv">
@@ -32,28 +32,10 @@
   <object id="3" type="cutter" x="171" y="888">
    <point/>
   </object>
-  <object id="4" type="cutter" x="172" y="332">
-   <point/>
-  </object>
-  <object id="5" type="cutter" x="269" y="227">
-   <point/>
-  </object>
-  <object id="6" type="cutter" x="271" y="174">
-   <point/>
-  </object>
-  <object id="7" type="cutter" x="374" y="129">
-   <point/>
-  </object>
   <object id="9" type="cutter" x="270" y="786">
    <point/>
   </object>
-  <object id="14" type="shooter" x="223" y="372">
-   <point/>
-  </object>
-  <object id="15" type="shooter" x="424" y="389">
-   <properties>
-    <property name="y" type="int" value="1"/>
-   </properties>
+  <object id="16" type="cutter" x="374" y="687">
    <point/>
   </object>
  </objectgroup>

@@ -1,35 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="2018.07.13" orientation="orthogonal" renderorder="left-down" width="16" height="10" tilewidth="50" tileheight="50" infinite="0" nextlayerid="4" nextobjectid="5">
+<map version="1.0" tiledversion="2018.07.13" orientation="orthogonal" renderorder="left-down" width="16" height="10" tilewidth="50" tileheight="50" infinite="0" nextlayerid="4" nextobjectid="14">
  <tileset firstgid="1" source="50.tsx"/>
  <layer id="3" name="块层 1" width="16" height="10">
   <data encoding="csv">
 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,
-1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,
-1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,1,
-1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,1,
-1,0,0,0,0,1,1,0,0,0,0,0,0,1,1,1,
-1,0,0,0,0,1,1,0,0,0,0,0,0,1,1,1,
-1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,1,
-1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+1,0,0,1,1,1,1,0,0,1,1,1,1,0,0,1,
+1,0,0,1,1,1,1,0,0,1,1,1,1,0,0,1,
+1,0,0,1,1,0,0,0,0,0,0,1,1,0,0,1,
+1,0,0,1,1,0,0,0,0,0,0,1,1,0,0,1,
+1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,
 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 </data>
  </layer>
  <objectgroup id="2" name="对象层 1">
-  <object id="1" type="door" x="75" y="144">
+  <object id="1" type="door" x="673.333" y="236">
    <point/>
   </object>
-  <object id="2" type="patrol" x="276" y="216">
+  <object id="2" type="patrol" x="678.667" y="444">
    <properties>
-    <property name="distance" type="int" value="3"/>
-    <property name="x" type="int" value="1"/>
+    <property name="distance" type="int" value="7"/>
+    <property name="x" type="int" value="0"/>
+    <property name="y" type="int" value="1"/>
    </properties>
    <point/>
   </object>
-  <object id="3" type="cutter" x="628" y="181">
+  <object id="4" type="gem" x="323.667" y="30.667">
    <point/>
   </object>
-  <object id="4" type="gem" x="677" y="134">
+  <object id="5" type="shooter" x="725.334" y="385.333">
+   <properties>
+    <property name="x" type="int" value="0"/>
+    <property name="y" type="int" value="1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="6" type="spring" x="620.001" y="485.333">
+   <properties>
+    <property name="y" type="int" value="1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="7" type="spring" x="21.3333" y="337.333">
+   <properties>
+    <property name="x" type="int" value="1"/>
+    <property name="y" type="int" value="0"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="9" type="cutter" x="424" y="340">
    <point/>
   </object>
  </objectgroup>

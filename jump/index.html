@@ -59,17 +59,20 @@
 		function init()
 		{
 			var c=document.getElementById("webgl");
-			var game=lovedna.game.Game.current;
-			game.system.setup({canvas:c});
+			try{
+				var game=lovedna.game.Game.current;
+				game.system.setup({canvas:c});
+			}catch(e)
+			{
+			}
+			
 		}
 		function gameInit(){
 			var str=location.search;
+			trace(str);
 			if(str.indexOf("?")==0)
 			{
-				lovedna.Battle.current.loadJson(str.substr(1)+".tmx",version);
-			}else
-			{
-				lovedna.Battle.current.loadJson("4.tmx");
+				GameConfig.mapPath=str.substr(1)+".tmx";
 			}
 		}
 	</script>

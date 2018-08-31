@@ -32,28 +32,7 @@
   <object id="3" type="cutter" x="324" y="839">
    <point/>
   </object>
-  <object id="4" type="cutter" x="172" y="332">
-   <point/>
-  </object>
-  <object id="5" type="cutter" x="269" y="227">
-   <point/>
-  </object>
-  <object id="6" type="cutter" x="271" y="174">
-   <point/>
-  </object>
-  <object id="7" type="cutter" x="374" y="129">
-   <point/>
-  </object>
   <object id="9" type="cutter" x="168" y="885">
-   <point/>
-  </object>
-  <object id="14" type="shooter" x="270" y="483">
-   <point/>
-  </object>
-  <object id="15" type="shooter" x="376" y="657">
-   <properties>
-    <property name="y" type="int" value="1"/>
-   </properties>
    <point/>
   </object>
  </objectgroup>

@@ -4,22 +4,22 @@
  <layer id="3" name="块层 1" width="16" height="10">
   <data encoding="csv">
 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,
-1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,
 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
-1,0,0,0,0,1,1,0,0,1,1,0,0,0,0,1,
-1,0,0,0,0,1,1,0,0,1,1,0,0,0,0,1,
-1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,
-1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,
+1,0,0,1,1,1,1,0,0,1,1,1,1,0,0,1,
+1,0,0,1,1,1,1,0,0,1,1,1,1,0,0,1,
+1,0,0,1,1,0,0,0,0,0,0,1,1,0,0,1,
+1,0,0,1,1,0,0,0,0,0,0,1,1,0,0,1,
+1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,
 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 </data>
  </layer>
  <objectgroup id="2" name="对象层 1">
-  <object id="1" type="door" x="225.333" y="435">
+  <object id="1" type="door" x="129.333" y="139">
    <point/>
   </object>
-  <object id="2" type="patrol" x="574.667" y="438">
+  <object id="2" type="patrol" x="479.667" y="140">
    <properties>
     <property name="distance" type="int" value="3"/>
     <property name="x" type="int" value="-1"/>
@@ -27,17 +27,17 @@
    </properties>
    <point/>
   </object>
-  <object id="4" type="gem" x="574.667" y="135.667">
+  <object id="4" type="gem" x="678.667" y="142.667">
    <point/>
   </object>
-  <object id="5" type="shooter" x="720.334" y="190.333">
+  <object id="5" type="shooter" x="477.334" y="92.333">
    <properties>
-    <property name="x" type="int" value="0"/>
-    <property name="y" type="int" value="-1"/>
+    <property name="x" type="int" value="-1"/>
+    <property name="y" type="int" value="0"/>
    </properties>
    <point/>
   </object>
-  <object id="6" type="spring" x="676.001" y="491.333">
+  <object id="6" type="spring" x="675.001" y="482.333">
    <properties>
     <property name="y" type="int" value="1"/>
    </properties>
@@ -50,7 +50,7 @@
    </properties>
    <point/>
   </object>
-  <object id="9" type="cutter" x="424" y="340">
+  <object id="9" type="cutter" x="683" y="184">
    <point/>
   </object>
  </objectgroup>

@@ -19,12 +19,12 @@
   <object id="1" type="door" x="374.667" y="442.666">
    <point/>
   </object>
-  <object id="2" type="cutter" x="473.333" y="337.333">
+  <object id="2" type="cutter" x="473.333" y="328">
    <point/>
   </object>
-  <object id="3" type="patrol" x="271.333" y="346">
+  <object id="3" type="patrol" x="282" y="282">
    <properties>
-    <property name="distance" type="int" value="5"/>
+    <property name="distance" type="int" value="4"/>
     <property name="y" type="int" value="1"/>
    </properties>
    <point/>
@@ -42,15 +42,13 @@
   <object id="6" type="trigger" x="78" y="441">
    <properties>
     <property name="dir" type="int" value="1"/>
-    <property name="x" type="int" value="12"/>
-    <property name="y" type="int" value="6"/>
+    <property name="x" type="int" value="9"/>
+    <property name="y" type="int" value="3"/>
    </properties>
    <point/>
   </object>
-  <object id="7" type="block" x="622" y="191">
+  <object id="7" type="trigger" x="622" y="191">
    <properties>
-    <property name="close" type="int" value="1"/>
-    <property name="enable" type="int" value="0"/>
     <property name="x" type="int" value="9"/>
     <property name="y" type="int" value="3"/>
    </properties>

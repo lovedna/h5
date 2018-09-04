@@ -19,7 +19,7 @@
   <object id="1" type="door" x="173.333" y="437.333">
    <point/>
   </object>
-  <object id="2" type="patrol" x="422.667" y="390.666">
+  <object id="2" type="patrol" x="417.667" y="392.666">
    <properties>
     <property name="distance" type="int" value="5"/>
     <property name="x" type="int" value="-1"/>
@@ -38,7 +38,7 @@
    </properties>
    <point/>
   </object>
-  <object id="6" type="patrol" x="417" y="236">
+  <object id="6" type="patrol" x="414" y="243">
    <properties>
     <property name="distance" type="int" value="4"/>
     <property name="x" type="int" value="-1"/>

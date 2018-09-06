@@ -69,10 +69,15 @@
 		}
 		function gameInit(){
 			var str=location.search;
-			trace(str);
 			if(str.indexOf("?")==0)
 			{
-				GameConfig.mapPath=str.substr(1)+".tmx";
+				var vers=str.substr(1);
+				var list=vers.split("&");
+				GameConfig.mapPath=list[0]+".tmx";
+				if(list.length>1)
+				{
+					GameConfig.rotation=list[1];
+				}
 			}
 		}
 	</script>
